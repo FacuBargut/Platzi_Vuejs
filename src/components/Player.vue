@@ -1,5 +1,5 @@
 <template>
-    <div class="container">
+    <div v-if="track && track.album" class="container">
         <img :src="track.album.images[0].url" alt="">
         <p>
             <strong>{{ track.name}}</strong>
